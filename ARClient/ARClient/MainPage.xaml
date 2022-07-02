@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="ARClient.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <skia:SKCanvasView Grid.Column="0"
+            x:Name="CanvasViewLeft"
+            PaintSurface="OnCanvasViewPaintSurfaceLeft"/>
+        <skia:SKCanvasView Grid.Column="1" 
+            x:Name="CanvasViewRight"
+            PaintSurface="OnCanvasViewPaintSurfaceRight"/>
+    </Grid>
+
+</ContentPage>
